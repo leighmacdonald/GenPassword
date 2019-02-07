@@ -63,6 +63,7 @@ def main():
 	txt = Entry(window, width=80, justify=LEFT, textvariable=pass_value)
 	txt.grid(column=1, row=1)
 	txt.bind('<KeyRelease>', on_values_changed)
+    txt.config(show="*")
 
 	# Row 2
 	lbl_h = Label(window, text="Generated Hash", font=("Helvetica", 14), width=14, justify=RIGHT)
